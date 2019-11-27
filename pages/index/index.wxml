@@ -1,0 +1,164 @@
+<!--index.wxml-->
+<view class="topBody">
+  <image src="/images/icon/1-1.png"></image>
+</view>
+<view class="top">
+  <view class="top_1">
+    <view class="top_1_1">
+      <image src="/images/icon/ip.png"></image>
+    </view>
+    <view class="top_1_2">
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[2]}}
+        </view>
+      </picker>
+    </view>
+     <view class="top_1_4">晴  32°C</view>
+    <view class="top_1_3">2019年10月</view>
+  </view>
+  <view class="top_2">
+    <swiper>
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image src="/images/icon/main_banner.png" style="width:100%;height:100%;"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class="mainup" >
+  <view class="mainup_1">
+    <view class="mainup_1_1">活动书</view>
+    <view class="mainup_1_2">320000</view>
+  </view>
+  <view class="mainup_2">
+    <view class="mainup_1_1">组织数</view>
+    <view class="mainup_1_2">34022</view>
+  </view>
+  <view class="mainup_3">
+    <view class="mainup_1_1">用户数</view>
+    <view class="mainup_1_2">3471520</view>
+  </view>
+</view>
+<view class="maindow" style="">
+  <view class="maindow_1" bindtap="goUrl" data-url="gykt">
+    <view class="maindow_1_1">
+      <image src="/images/icon/gykt.png"></image>
+    </view>
+    <view  class="maindow_1_2">公益课堂</view>
+  </view>
+  <view class="maindow_2" bindtap="goUrl" data-url="hdzm">
+    <view class="maindow_1_1">
+      <image src="/images/icon/hdzm.png"></image>
+    </view>
+    <view  class="maindow_1_2">活动招募</view>
+  </view>
+  <view class="maindow_3" bindtap="goUrl" data-url="fwjg">
+    <view class="maindow_1_1">
+      <image src="/images/icon/fwjg.png"></image>
+    </view>
+    <view  class="maindow_1_2">服务机构</view>
+  </view>
+  <view class="maindow_4" bindtap="goUrl" data-url="csph">
+    <view class="maindow_1_1">
+      <image src="/images/icon/csph.png"></image>
+    </view>
+    <view  class="maindow_1_2">城市排行</view>
+  </view>
+</view>
+<view class="news">
+  <view class="news_1">
+    <image src="/images/icon/Activity Chart.png"></image>
+  </view>
+  <view class="news_2">热门活动</view>
+</view>
+<view class="newslist">
+  <view class="newslist_1">
+    <view class="newslist_1_1">
+      <image src="/images/icon/main_plan0.png"></image>
+    </view>
+    <view class="newslist_1_2">
+      <view class="newslist_1_2_1">70周年大庆中心商业圈志愿者服务活动</view>
+      <view class="newslist_1_2_2">
+        <view class="newslist_1_2_2_1">报名：2019-10-07 12：00截止</view>
+        <view class="newslist_1_2_2_2">活动：2019-10-07 13：00——2019-10-07 20：00</view>
+        <view class="newslist_1_2_2_3">地点：灵丘县中心青年服务中心</view>
+        <view class="newslist_1_2_2_4">106人报名
+        <view  class="newslist_1_2_2_4_1">志愿服务</view>
+        </view>
+      </view>
+      <view class="newslist_1_2_3">2 小时前</view>
+    </view>
+  </view>
+  <view class="newslist_1">
+    <view class="newslist_1_1">
+      <image src="/images/icon/main_plan0.png"></image>
+    </view>
+    <view class="newslist_1_2">
+      <view class="newslist_1_2_1">70周年大庆中心商业圈志愿者服务活动</view>
+      <view class="newslist_1_2_2">
+        <view class="newslist_1_2_2_1">报名：2019-10-07 12：00截止</view>
+        <view class="newslist_1_2_2_2">活动：2019-10-07 13：00——2019-10-07 20：00</view>
+        <view class="newslist_1_2_2_3">地点：灵丘县中心青年服务中心</view>
+        <view class="newslist_1_2_2_4">106人报名
+        <view  class="newslist_1_2_2_4_1">志愿服务</view>
+        </view>
+      </view>
+      <view class="newslist_1_2_3">2 小时前</view>
+    </view>
+  </view>
+  <view class="newslist_1">
+    <view class="newslist_1_1">
+      <image src="/images/icon/main_plan0.png"></image>
+    </view>
+    <view class="newslist_1_2">
+      <view class="newslist_1_2_1">70周年大庆中心商业圈志愿者服务活动</view>
+      <view class="newslist_1_2_2">
+        <view class="newslist_1_2_2_1">报名：2019-10-07 12：00截止</view>
+        <view class="newslist_1_2_2_2">活动：2019-10-07 13：00——2019-10-07 20：00</view>
+        <view class="newslist_1_2_2_3">地点：灵丘县中心青年服务中心</view>
+        <view class="newslist_1_2_2_4">106人报名
+        <view  class="newslist_1_2_2_4_1">志愿服务</view>
+        </view>
+      </view>
+      <view class="newslist_1_2_3">2 小时前</view>
+    </view>
+  </view>
+  <view class="newslist_1">
+    <view class="newslist_1_1">
+      <image src="/images/icon/main_plan0.png"></image>
+    </view>
+    <view class="newslist_1_2">
+      <view class="newslist_1_2_1">70周年大庆中心商业圈志愿者服务活动</view>
+      <view class="newslist_1_2_2">
+        <view class="newslist_1_2_2_1">报名：2019-10-07 12：00截止</view>
+        <view class="newslist_1_2_2_2">活动：2019-10-07 13：00——2019-10-07 20：00</view>
+        <view class="newslist_1_2_2_3">地点：灵丘县中心青年服务中心</view>
+        <view class="newslist_1_2_2_4">106人报名
+        <view  class="newslist_1_2_2_4_1">志愿服务</view>
+        </view>
+      </view>
+      <view class="newslist_1_2_3">2 小时前</view>
+    </view>
+  </view>
+  <view class="newslist_1">
+    <view class="newslist_1_1">
+      <image src="/images/icon/main_plan0.png"></image>
+    </view>
+    <view class="newslist_1_2">
+      <view class="newslist_1_2_1">70周年大庆中心商业圈志愿者服务活动</view>
+      <view class="newslist_1_2_2">
+        <view class="newslist_1_2_2_1">报名：2019-10-07 12：00截止</view>
+        <view class="newslist_1_2_2_2">活动：2019-10-07 13：00——2019-10-07 20：00</view>
+        <view class="newslist_1_2_2_3">地点：灵丘县中心青年服务中心</view>
+        <view class="newslist_1_2_2_4">106人报名
+        <view  class="newslist_1_2_2_4_1">志愿服务</view>
+        </view>
+      </view>
+      <view class="newslist_1_2_3">2 小时前</view>
+    </view>
+  </view>
+</view>
+<import src="/pages/common/tabbar.wxml" />
+<template is="main" />

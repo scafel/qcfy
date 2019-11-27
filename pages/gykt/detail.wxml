@@ -1,0 +1,87 @@
+<!--pages/gykt/detail.wxml-->
+<view class="header">
+    <view class="header_1">
+        <view class="header_1_1">
+          <image src="/images/icon/gykt.png"></image>
+        </view>
+        <view class="header_1_2">公益课堂</view>
+    </view>
+</view>
+<view class="content">
+  <view class="content_title">关注全球气候变化</view>
+  <view class="content_video">
+    <video src="https://v.qq.com/x/page/n3021bdrn35.html"></video>
+  </view>
+  <view class="content_form">
+      <view class="content_form_title" bindtap="showForm">
+        <view class="content_form_title_1">定制本课程</view>
+        <view class="content_form_title_2">已定制36次</view>
+      </view>
+      <view class="content_form_main" style="display:{{displayF}}">
+          <view class="content_form_main_item">
+              <view class="content_form_main_item_title">机构</view>
+              <view class="content_form_main_item_input">
+                <input name="jg"></input>
+              </view>
+          </view>
+          <view class="content_form_main_item">
+              <view class="content_form_main_item_title">人数</view>
+              <view class="content_form_main_item_input">
+                <input name="rs"></input>
+              </view>
+          </view>
+          <view class="content_form_main_item">
+              <view class="content_form_main_item_title">时间</view>
+              <view class="content_form_main_item_input">
+                <input name="sj"></input>
+              </view>
+          </view>
+          <view class="content_form_main_item">
+              <view class="content_form_main_item_title">地点</view>
+              <view class="content_form_main_item_input">
+                <input name="dd"></input>
+              </view>
+          </view>
+          <view class="content_form_main_item">
+              <view class="content_form_main_item_title">联系人</view>
+              <view class="content_form_main_item_input">
+                <input name="lxr"></input>
+              </view>
+          </view>
+          <view class="content_form_main_item">
+              <view class="content_form_main_item_title">联系电话</view>
+              <view class="content_form_main_item_input">
+                <input name="lxdh"></input>
+              </view>
+          </view>
+      </view>
+  </view>
+  <view class="content_main">
+      <view class="content_main_title">Use this kit</view>
+      <view class="content_main_content">First save this file as a cloud document. Then from the share button, select “Invite to Edit” to share this kit with your team. They’ll be able to bring in all the assets (colors, character styles, and components) from this file to use in any of their XD d</view>
+  </view>
+</view>
+
+<view class="list" bindtap="showDetail" data-id="1">
+    <view class="list_1">
+        <image src="/images/icon/video_0.png"></image>
+    </view>
+    <view class="list_2">
+      <view class="list_2_1">我们的街舞</view>
+       <view class="list_2_2">01：08</view>
+        <view class="list_2_3">2019-11-18 12:14:1</view>
+    </view>
+</view>
+<view class="list"  bindtap="showDetail" data-id="1">
+    <view class="list_1">
+        <image src="/images/icon/video_0.png"></image>
+    </view>
+    <view class="list_2">
+      <view class="list_2_1">我们的街舞</view>
+       <view class="list_2_2">01：08</view>
+        <view class="list_2_3">2019-11-18 12:14:1</view>
+    </view>
+</view>
+
+<import src="/pages/common/tabbar.wxml" />
+<template is="default" />

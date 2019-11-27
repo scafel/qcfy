@@ -1,0 +1,52 @@
+<!--pages/hdzm/index.wxml-->
+<view class="header">
+    <view class="header_1">
+        <view class="header_1_1">
+          <image src="/images/icon/hdzm.png"></image>
+        </view>
+        <view class="header_1_2">活动招募</view>
+    </view>
+</view>
+<view class="list" bindtap="showDetail" data-id="1">
+    <view class="list_1">
+        <image src="/images/icon/video_0.png"></image>
+    </view>
+    <view class="list_2">
+      <view class="list_2_1">我们的街舞</view>
+       <view class="list_2_2">01：08</view>
+        <view class="list_2_3">2019-11-18 12:14:1</view>
+    </view>
+</view>
+<view class="list"  bindtap="showDetail" data-id="1">
+    <view class="list_1">
+        <image src="/images/icon/video_0.png"></image>
+    </view>
+    <view class="list_2">
+      <view class="list_2_1">我们的街舞</view>
+       <view class="list_2_2">01：08</view>
+        <view class="list_2_3">2019-11-18 12:14:1</view>
+    </view>
+</view>
+<view class="list"  bindtap="showDetail" data-id="1">
+    <view class="list_1">
+        <image src="/images/icon/video_0.png"></image>
+    </view>
+    <view class="list_2">
+      <view class="list_2_1">我们的街舞</view>
+       <view class="list_2_2">01：08</view>
+        <view class="list_2_3">2019-11-18 12:14:1</view>
+    </view>
+</view>
+<view class="list"  bindtap="showDetail" data-id="1">
+    <view class="list_1">
+        <image src="/images/icon/video_0.png"></image>
+    </view>
+    <view class="list_2">
+      <view class="list_2_1">我们的街舞</view>
+       <view class="list_2_2">01：08</view>
+        <view class="list_2_3">2019-11-18 12:14:1</view>
+    </view>
+</view>
+
+<import src="/pages/common/tabbar.wxml" />
+<template is="default" />

@@ -1,0 +1,254 @@
+/* pages/user/index.wxss */
+.weui-grids{
+  width: 100%;
+}
+.topBody{
+ height: 40px;
+ line-height: 40px;
+ margin-left: 10px;
+}
+.topBody image{
+    height: 34px;
+    width: 81px;
+}
+.userTop{
+  display: block;
+  width: 100%;
+  height: 145.5px;
+  position: relative;
+  overflow: hidden;
+}
+.user_1{
+  width:67px;
+  height: 67px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.user_1 image{
+  width: 100%;
+  height: 100%;
+}
+.user_2_1_1_1_1{
+  font-size: 25px;
+}
+.user_2_1_1_1_2{
+  width: 11.07px;
+  height:15.59px;
+}
+.user_2_1_1_1_2 image{
+  width: 100%;
+  height: 100%;
+}
+.user_2_1_1_2 image{
+  width: 13.71px;
+  height: 13.71px;
+}
+.user_2_1_2{
+  width: 125px;
+  height: 24px;
+  border-radius: 10px;
+  line-height: 24px;
+  background: #4EA6EE;
+  display: inline-block;
+}
+.user_2_1_2_1{
+  width: 14px;
+  height: 11px;
+  display: inline-block;
+}
+.user_2_1_2_1 image{
+  width: 100%;
+  height: 100%;
+}
+.user_2_1_2_2{
+ font-size: 12px;
+ display: inline-block;
+ color: white;
+}
+.user_2_2{
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+}
+.userMain{
+  width: 100%;
+  height: 48px;
+  overflow: hidden;
+  position: relative;
+}
+.userTag{
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  background: #4ED1BD;
+}
+.userButton{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.userButton_1_1{
+  width: 68.51px;
+  height: 51.8px;
+}
+.userButton_1_1 image{
+  width: 100%;
+  height: 100%;
+}
+.userButton_1_2 , .userButton_2_2{
+  font-size: 12px;
+}
+.userButton_2_1{
+  width: 68.51px;
+  height: 51.8px;
+}
+.userButton_2_1 image{
+  width: 100%;
+  height: 100%;
+}
+.user_1{
+  position: absolute;
+  top: 34px;
+  left: 17px;
+}
+.user_2{
+  display: inline-block;
+  margin-left: 95.5px;
+  margin-top: 34px;
+}
+.user_2_1_1{
+}
+.user_2_1_1_1_1{
+  display: inline-block;
+}
+.user_2_1_1_1_2{
+  margin-left: 5px;
+  display: inline-block;
+}
+.user_2_1_1_1_2 image{
+   vertical-align:top;
+   display: inline-block;
+}
+.user_2_1_1_2  image{
+   vertical-align:top;
+   display: inline-block;
+   margin-left: 6px;
+}
+.user_2_1_2{
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+.user_2_1_2_1{
+  margin-left: 24px;
+  margin-right: 5px;
+}
+.userMain{
+  position: relative;
+}
+.userMain_1{
+  margin-left: 105px;
+}
+.userMain_1,.userMain_2{
+  width: 90px;
+  height: 48px;
+  display: inline-block;
+  padding-right: 8px;
+}
+.userMain_2{
+  margin-left: 5px;
+}
+.userMain_1 .userMain_1_1,.userMain_2 .userMain_2_1{
+  font-size: 20px;
+  color: #00A9DE;
+  border-right: 1px solid #A2A2A2;
+}
+.userMain_1 .userMain_1_2,.userMain_2 .userMain_2_2{
+  font-size: 11px;
+  color: #A2A2A2;
+}
+.userTag{
+  margin: 0px auto;
+  margin-top: 27px;
+}
+.userButtonTitle{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.userButton{
+  position: relative;
+}
+.userButton_1,.userButton_2{
+  width: 50%;
+  margin-top: 5px;
+  display: inline-block;
+}
+.userButton_1_1,.userButton_2_1{
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+}
+.userButton_1_2,.userButton_2_2{
+  display: inline-block;
+  font-size: 12px;
+  height: 48px;
+  line-height: 48px;
+  margin-left: 5px;
+}
+.zs_1{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events:auto;
+  z-index: 10;
+}
+.zs_1_1{
+  margin-top: 35%;
+  width: 90%;
+  left: 5%;
+  height: auto;
+  position: relative;
+}
+.zs_1_1 image{
+  width: 100%;
+}
+.zs_1_2{
+  position: absolute;
+  top: 43%;
+  left: 20%;
+  font-size: 10px;
+  font-weight: 500;
+}
+.zs_1_3{
+ position: absolute;
+  top:74.6%;
+  left: 69%;
+  font-size: 10px;
+}
+.zs_1_4{
+ position: absolute;
+  top:74.6%;
+  left: 81.3%;
+  font-size: 10px;
+}
+.zs_1_5{
+ position: absolute;
+ top:74.6%;
+  left: 87%;
+  font-size: 10px;
+}
+.getwechat{
+  border: 1px solid black;
+width: 56px;
+height: 24px;
+font-size: 11px;
+text-align: center;
+padding: 0px;
+margin-top: 19px;
+line-height: 23px;
+}

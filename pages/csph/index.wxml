@@ -1,0 +1,53 @@
+<!--pages/csph/index.wxml-->
+<view class="header">
+    <view class="header_1">
+        <view class="header_1_1">
+          <image src="/images/icon/csph.png"></image>
+        </view>
+        <view class="header_1_2">城市排行</view>
+    </view>
+</view>
+<view class="content">
+  <view class="contentTop">
+  	<view class="contentTop_1" bindtap="sortDetail" data-url="zhph">
+     <view class="contentTop_1_1"></view>
+     <view class="contentTop_1_2"></view>
+     <view class="contentTop_1_3">综合排行</view> 
+    </view>
+    <view class="contentTop_1" bindtap="sortDetail" data-url="qnfg">
+     <view class="contentTop_1_1"></view>
+     <view class="contentTop_1_2"></view>
+     <view class="contentTop_1_3">青年覆盖</view> 
+    </view>
+    <view class="contentTop_1" bindtap="sortDetail" data-url="hdhyd">
+     <view class="contentTop_1_1"></view>
+     <view class="contentTop_1_2"></view>
+     <view class="contentTop_1_3">活动活跃度</view> 
+    </view>
+  </view>
+  <view class="contentList">
+  	<view class="list_1">
+  		<view class="list_1_1">01</view>
+  		<view class="list_1_1">太原</view>
+  		<view class="list_1_1">85</view>
+  	</view>
+    <view class="list_1 list_1_b">
+      <view class="list_1_1">02</view>
+      <view class="list_1_1">太原</view>
+      <view class="list_1_1">85</view>
+    </view>
+    <view class="list_1">
+      <view class="list_1_1">03</view>
+      <view class="list_1_1">太原</view>
+      <view class="list_1_1">85</view>
+    </view>
+    <view class="list_1 list_1_b">
+      <view class="list_1_1">04</view>
+      <view class="list_1_1">太原</view>
+      <view class="list_1_1">85</view>
+    </view>
+  </view>
+</view>
+
+<import src="/pages/common/tabbar.wxml" />
+<template is="default" />

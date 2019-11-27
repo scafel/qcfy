@@ -1,0 +1,91 @@
+<!--pages/common/tabbar.wxml-->
+<template name="main">
+ <view class="weui-tabbar">
+    <view class="weui-tabbar__item"  >
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/main_1.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">主页</view>
+    </view>
+    <view class="weui-tabbar__item" bindtap="goUrl" data-url="search">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/search.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">搜索</view>
+    </view>
+    <view class="weui-tabbar__item" bindtap="goUrl"  data-url="user">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/user.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">我的</view>
+    </view>
+  </view>
+</template>
+<template name="search">
+ <view class="weui-tabbar">
+    <view class="weui-tabbar__item"  bindtap="goUrl"  data-url="index">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/main.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">主页</view>
+    </view>
+    <view class="weui-tabbar__item" >
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/search_1.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">搜索</view>
+    </view>
+    <view class="weui-tabbar__item" bindtap="goUrl"  data-url="user">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/user.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">我的</view>
+    </view>
+  </view>
+</template>
+<template name="user">
+  <view class="weui-tabbar">
+    <view class="weui-tabbar__item"  bindtap="goUrl"  data-url="index">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/main.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">主页</view>
+    </view>
+    <view class="weui-tabbar__item" bindtap="goUrl" data-url="search">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/search.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">搜索</view>
+    </view>
+    <view class="weui-tabbar__item">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/user_1.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">我的</view>
+    </view>
+  </view>
+</template>
+<template name="default">
+  <view class="weui-tabbar">
+    <view class="weui-tabbar__item"  bindtap="goUrl"  data-url="index">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/main.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">主页</view>
+    </view>
+    <view class="weui-tabbar__item" bindtap="goUrl" data-url="search">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/search.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">搜索</view>
+    </view>
+    <view class="weui-tabbar__item">
+      <view style="position: relative;display:inline-block;">
+        <image src="/images/icon/user.png" class="weui-tabbar__icon"></image>
+      </view>
+      <view class="weui-tabbar__label">我的</view>
+    </view>
+  </view>
+</template>
+
+ 

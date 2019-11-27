@@ -1,0 +1,14 @@
+<!--pages/user/certificate.wxml-->
+<view class="header">
+ <view class="header_1">编号</view>
+ <view class="header_2">专题培训</view>
+ <view class="header_3">发证日期</view>
+ <view class="header_4">下载证书</view>
+</view>
+<view class="header_list"></view>
+<view  class="header_list" wx:for="{{ cerList }}">
+	<view class="header_1">{{ item[0] }}</view>
+	 <view class="header_2">{{  item[1]  }}</view>
+	 <view class="header_3">{{  item[2] }}</view>
+	 <view class="header_4" bindtap="bcCertPng" data-png="{{ item[3] }}">下载</view>
+</view>

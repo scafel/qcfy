@@ -1,0 +1,15 @@
+<!--pages/hdzm/detail.wxml-->
+<view class="header">
+    <view class="header_1">
+        <view class="header_1_1">
+          <image src="/images/icon/hdzm.png"></image>
+        </view>
+        <view class="header_1_2">活动招募</view>
+    </view>
+</view>
+
+<view class="content">
+  <image src="/images/icon/content.png"></image>
+</view>
+<import src="/pages/common/tabbar.wxml" />
+<template is="default" />

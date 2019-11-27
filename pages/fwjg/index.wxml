@@ -1,0 +1,15 @@
+<!--pages/fwjg/index.wxml-->
+<view class="header">
+    <view class="header_1">
+        <view class="header_1_1">
+          <image src="/images/icon/fwjg.png"></image>
+        </view>
+        <view class="header_1_2">服务机构</view>
+    </view>
+</view>
+<view class="content">
+  内容建设中
+</view>
+
+<import src="/pages/common/tabbar.wxml" />
+<template is="default" />

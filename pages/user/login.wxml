@@ -1,0 +1,387 @@
+<!--pages/user/login.wxml-->
+<view class="page">
+  <scroll-view scroll-x="false" scroll-y="true" style="height:{{height}}px;">
+    <view class="page__hd" style="text-align: center;">
+      <view class="hd_1" style="margin:0 0 6px;letter-spacing:8px;">欢迎注册</view>
+      <view class="hd_2" style="margin:6px 0 6px;letter-spacing:3px;">
+        <view class="hd_2_1">与 </view>
+        <view class="hd_2_2">
+          <view class="hd_2_2_1" style="margin-left:5px;">0</view>
+          <view class="hd_2_2_1" style="margin-left:5px;">0</view>
+          <view class="hd_2_2_1" style="margin-left:5px;">5</view>
+          <view class="hd_2_2_1" style="margin-left:5px;">4</view>
+          <view class="hd_2_2_1" style="margin-left:5px;margin-right:5px;">0</view>
+        </view>
+        <view class="hd_2_3">位青年</view>
+      </view>
+      <view class="hd_3" style="margin-top:6px;;letter-spacing:3px;">一起青春伴飞</view>
+    </view>
+    <view class="page__bd">
+      <form bindsubmit="formSubmit">
+        <view class="weui-cells weui-cells_after-title" style="background:transparent">
+          <view class="weui-cell">
+            <view class="weui-cell__hd">
+              <view class="weui-label">选择类型</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="OneChange" value="{{oneIndex}}" range="{{oneData}}">
+                <view class="picker">
+                  <input value="{{one[oneIndex].name}}" disabled="true"></input>
+                  <input name="hfldMemberClassIdValue" value="{{one[oneIndex].name}}" style="display:none;"></input>
+                  <input name="hfldMemberClassId" value="{{one[oneIndex].id}}" style="display:none;"></input>
+                  <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                </view>
+              </picker>
+            </view>
+          </view>
+          <view style="display:{{showView.member}}">
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">   </view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="grTwoChange" value="{{grTwoIndex}}" range="{{grTwoData}}">
+                  <view class="picker">
+                    <input value="{{grTwo[grTwoIndex].name}}" disabled="true"></input>
+                    <input name="hfldMemberClassIdValueGrTwo" value="{{grTwo[grTwoIndex].name}}" style="display:none;"></input>
+                    <input name="hfldMemberClassIdGrTwo" value="{{grTwo[grTwoIndex].id}}" style="display:none;"></input>
+                    <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            <view style="display:{{showView.grThree}}">
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">  </view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="grThreeChange" value="{{grThreeIndex}}" range="{{grThreeData}}">
+                  <view class="picker">
+                    <input value="{{grThree[grThreeIndex].name}}" disabled="true"></input>
+                    <input name="hfldMemberClassIdValueGrThree" value="{{grThree[grThreeIndex].name}}" style="display:none;"></input>
+                    <input name="hfldMemberClassIdGrThree" value="{{grThree[grThreeIndex].id}}" style="display:none;"></input>
+                    <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">姓名</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtPersonalName" class="weui-input" />
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">性别</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="sexChange" value="{{sexIndex}}" range="{{sexData}}">
+                  <view class="picker">
+                    <input value="{{sex[sexIndex].value}}" disabled="true" ></input>
+                    <input name="txtSex" value="{{sex[sexIndex].value}}" style="display:none;"></input>
+                    <input name="txtSexType" value="{{sex[sexIndex].type}}" style="display:none;"></input>
+                    <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            <view style="display:{{showView.grFourOne}}">
+            <view class="weui-cell" >
+              <view class="weui-cell__hd">
+                <view class="weui-label">职业</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="grFourOneChange" value="{{grFourIndex}}" range="{{grFourData}}">
+                  <view class="picker">
+                    <input value="{{grFour[grFourIndex].name}}" disabled="true"></input>
+                    <input name="hfldMemberClassIdValuegrFourOne" value="{{grFour[grFourIndex].name}}" style="display:none;"></input>
+                    <input name="hfldMemberClassIdgrFourOne" value="{{grFour[grFourIndex].id}}" style="display:none;"></input>
+                    <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            </view>
+            <view style="display:{{showView.grFourTwo}}">
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">职业</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="grFourTwoChange" value="{{grFourIndex}}" range="{{grFourData}}">
+                  <view class="picker">
+                    <input value="{{grFour[grFourIndex].name}}" disabled="true"></input>
+                    <input name="hfldMemberClassIdValuegrFourTwo" value="{{grFour[grFourIndex].name}}" style="display:none;"></input>
+                    <input name="hfldMemberClassIdgrFourTwo" value="{{grFour[grFourIndex].id}}" style="display:none;"></input>
+                    <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            </view>
+            <view style="display:{{showView.grFourThree}}">
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">职业</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="grFourThreeChange" value="{{grFourIndex}}" range="{{grFourData}}">
+                  <view class="picker">
+                    <input value="{{grFour[grFourIndex].name}}" disabled="true"></input>
+                    <input name="hfldMemberClassIdValuegrFourThree" value="{{grFour[grFourIndex].name}}" style="display:none;"></input>
+                    <input name="hfldMemberClassIdgrFourThree" value="{{grFour[grFourIndex].id}}" style="display:none;"></input>
+                    <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">民族</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtNation" class="weui-input" />
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">出生年月</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker mode="date" value="{{date}}" start="1960-1-1" end="2010-12-31" bindchange="dateChange">
+                  <view class="weui-input">{{date}}</view>
+                  <input name="txtBorn" value="{{date}}" style="display:none;" />
+                </picker>
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">籍贯</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtNativePlace" class="weui-input" />
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">政治面貌</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="politicChange" value="{{politicIndex}}" range="{{politicData}}">
+                  <view class="picker">
+                    <input value="{{politic[politicIndex].value}}" disabled="true"></input>
+                    <input name="dropPoliticCountenance" value="{{politic[politicIndex].value}}" style="display:none;"/>
+                  <input name="dropPoliticCountenanceType" value="{{politic[politicIndex].type}}" style="display:none;" />
+                  <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            <view style="display:{{showView.politic}};">
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">党派</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtPoliticCountenance_2" class="weui-input" />
+              </view>
+            </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">学历</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="educationalChange" value="{{politicIndex}}" range="{{educationalData}}">
+                  <view class="picker">
+                    <input value="{{educational[educationalIndex].value}}" disabled="true"></input>
+                    <input name="dropEducationalBackground" value="{{educational[educationalIndex].value}}" style="display:none;"/>
+                  <input name="dropEducationalBackgroundType" value="{{educational[educationalIndex].type}}" style="display:none;" />
+                  <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">地市</view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="cityChange" value="{{cityIndex}}" range="{{cityData}}">
+                  <view class="picker">
+                    <input value="{{city[cityIndex].value}}" disabled="true"></input>
+                    <input name="dropCity" value="{{city[cityIndex].value}}" style="display:none;"/>
+                  <input name="dropCityType" value="{{city[cityIndex].type}}" style="display:none;" />
+                  <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">电话</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtTel" class="weui-input" />
+              </view>
+            </view>
+            <view style="display:{{showView.xshzzcyry}}">
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">组织名称及职务</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtZzmcjzw" class="weui-input" />
+                </view>
+              </view>
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">是否参与过</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <checkbox-group bindchange="chkSfcyg">
+                    <view class="checkbox" wx:for="{{sfcygData}}">
+                      <checkbox name="chkSfcyg[]" value="{{sfcyg[index].value}}" />{{sfcyg[index].value}}
+                    </view>
+                  </checkbox-group>
+                </view>
+              </view>
+            </view>
+            <view style="display:{{showView.qsnswshgzzyrc}}">
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">工作单位</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtWorkUnit" class="weui-input" />
+                </view>
+              </view>
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">主要服务地区</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtZyfwdq" class="weui-input" />
+                </view>
+              </view>
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">职业水平</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtProfessionalLevel" class="weui-input" />
+                </view>
+              </view>
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">从业年限</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtYearsOfWorking" class="weui-input" />
+                </view>
+              </view>
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">从业专长</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtProfessionalExpertise" class="weui-input" />
+                </view>
+              </view>
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">符合条件打勾</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <checkbox-group bindchange="meetTheRequirements">
+                    <view class="checkbox" wx:for="{{meetTheRequirementsData}}">
+                      <checkbox name="meetTheRequirements[index]" value="{{meetTheRequirements[index].value}}" />{{meetTheRequirements[index].value}}
+                    </view>
+                  </checkbox-group>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view style="display:{{showView.organization}}">
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label"></view>
+              </view>
+              <view class="weui-cell__bd">
+                <picker bindchange="jgTwoChange" value="{{jgTwoIndex}}" range="{{jgTwoData}}">
+                  <view class="picker">
+                    <input value="{{jgTwo[jgTwoIndex].name}}" disabled="true"></input>
+                    <input name="hfldMemberClassIdValueJgTwo" value="{{jgTwo[jgTwoIndex].name}}" style="display:none;"></input>
+                    <input name="hfldMemberClassIdJgTwo" value="{{jgTwo[jgTwoIndex].id}}" style="display:none;"></input>
+                    <image class="icon_down_picker" src="/images/icon/icn_back_dark.png"></image>
+                  </view>
+                </picker>
+              </view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">机构名称</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtCompanyName" class="weui-input" />
+                </view>
+              </view>
+            <view style="display:{{showView.jgydj}}">
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">机构代码</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtOrganizationCode" class="weui-input" />
+                </view>
+              </view>
+              <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">机构法人</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input name="txtLegalPerson" class="weui-input" />
+                </view>
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">机构电话</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtCompanyTel" class="weui-input" />
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">机构邮箱</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtCompanyEmail" class="weui-input" />
+              </view>
+            </view>
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <view class="weui-label">机构人数</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input name="txtCompanyNo" class="weui-input" />
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-btn-area-login-dc">
+        </view>
+        <view class="weui-btn-area-login" style="z-index:9999;">
+          <button class="weui-btn" form-type="submit" type="default" style="background: rgba(155, 96, 123, 0.8);color: white;">注册</button>
+        </view>
+      </form>
+    </view>
+  </scroll-view>
+</view>

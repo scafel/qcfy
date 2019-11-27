@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/common/header",
+    "pages/common/tabbar",
+    "pages/user/login",
+    "pages/index/index",
+    "pages/gykt/index",
+    "pages/gykt/detail",
+    "pages/hdzm/index",
+    "pages/hdzm/detail",
+    "pages/fwjg/index",
+    "pages/csph/index",
+    "pages/user/index",
+    "pages/user/certificate",
+    "pages/common/imgHeader",
+    "pages/search/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

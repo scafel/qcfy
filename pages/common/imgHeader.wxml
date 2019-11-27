@@ -1,0 +1,2 @@
+<!--pages/common/imgHeader.wxml-->
+<image src="/images/icon_tabbar.png" style="height:34px;"></image>
